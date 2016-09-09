@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>COMPEWTER WIRUS HELP</title>
+    <style>
+      body {
+        background-color:blue;
+        font-family:Courier;
+        color:white;
+      }
+      div.d1 {
+        padding-right: 10px;
+        float:left;
+        clear:none;
+      }
+      div.d2 {
+        padding-left: 500px;
+        float:left;
+        clear:none;
+      }
+      footer {
+        float:bottom;
+      }
+      /* TODO: make div.d2 stay in place. perhaps the fact that it floats left is the problem. will find alternative solution*/
+    </style>
+  </head>
+  <body>
+    <section>
+      <b>Error Code 303</b> is an error code caused by a memory overflow. A program runs by using assigned channels of memory. Malicious software may be able to take advantage of this and write over a channel used to give the system instructions. It can tell the system to install this malicious software. Wiruses usually take advantage of poorly programmed programs to run these instructions. <br><br>Please contact Microsoft Technical Support at 420-666-1738 to resolve this and every other issue with your machine. <br>
+      <button onclick="contact(); setTimeout(error, 3000);">Click here to contact Microsoft Technical Support</button>
+      <br>
+      <div class="d1">
+        <p id="d">Diagnostics information will appear here</p>
+        <p id="e"> </p>
+        <p id="f"> </p>
+        <p id="g"> </p>
+        <p id="h"> </p>
+        <p id="i"> </p>
+        <p id="j"> </p>
+        <p id="k"> </p>
+        <p id="l"> </p>
+        <p id="m"> </p>
+        <p id="n"> </p>
+        <p id="z"> </p>
+        <p id="aa"> </p>
+      </div><div class="d2">
+        <p id="o">Diagnostics information will appear here </p>
+        <p id="p"> </p>
+        <p id="q"> </p>
+        <p id="r"> </p>
+        <p id="s"> </p>
+        <p id="t"> </p>
+        <p id="u"> </p>
+        <p id="v"> </p>
+        <p id="w"> </p>
+        <p id="x"> </p>
+        <p id="y"> </p>
+      </div>
+      
+    </section>
+    
+    <script>
+    var timestamp = new Date();
+      function contact () {
+        alert('Contacting Microsoft Support. Please do not dismiss this window. Doing so may cause harm to the VoIP protocol machine and may cause another error code 303.');
+      }
+      function error() {
+        alert('Window closed abruptly. Running system diagnostics...');
+        document.getElementById("d").innerHTML= "Running System Diagnostics...";
+        document.getElementById("e").innerHTML= "Running Memory Check...   (0%)";
+        document.getElementById("f").innerHTML= "Running Memory Check...   (36%)";
+        document.getElementById("g").innerHTML= "Running Memory Check...   (73%)";
+        document.getElementById("o").innerHTML= "Running System Diagnostics...";
+        document.getElementById("p").innerHTML= "Running CPU Core Test...  (0%)";
+        document.getElementById("q").innerHTML= "Running CPU Core Test...  (36%";
+        document.getElementById("r").innerHTML= "Running CPU Core Test...  (73%)";
+        setTimeout(error2, 3000);
+      }
+      function error2() {
+        document.getElementById("h").innerHTML= "Memory Test Results";
+        document.getElementById("i").innerHTML= "___________________";
+        document.getElementById("j").innerHTML= "Available: 4048MB  ";
+        document.getElementById("k").innerHTML= "Used:      4000MB  ";
+        document.getElementById("l").innerHTML= "Infected:  3800MB  ";
+        document.getElementById("m").innerHTML= "-------------------";
+        document.getElementById("n").innerHTML= "Your computer has many wiruses on it.";
+        document.getElementById("z").innerHTML= "Please contact Microsoft Technical Support at 420-666-1738";
+        document.getElementById("aa").innerHTML= "This test was conducted at time " + timestamp.getHours() + ":" + timestamp.getMinutes() + ":" + timestamp.getSeconds();
+      }
+    </script>
+    <footer>
+      <p id="time">text</p>
+      <script>
+        var timetamp = new Date();
+        var i = 1;
+        setInterval(timeUpdate, 25);
+        function timeUpdate() {
+          document.getElementById("time").innerHTML= "Current time is " + timetamp.getHours() + ":" + timetamp.getMinutes() + ":" + timetamp.getSeconds();
+        }
+      </script>
+    </footer>
+  </body>
+</html>
+  
