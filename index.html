@@ -13,9 +13,16 @@
   <h1>Welcome to my page. It sucks right now but it will get better once I learn materialize.</h1>
   <p>I know thats not how to properly use the h1 tag, but like I said, it will get better</p>
   </div>
-  <div w3-include-html="/Scam-Site/welcome.html"></div>
+  <div id="map"></div>
   <script>
-    w3IncludeHTML();
+    var map
+    function displayMap() {
+      map = google.maps.Map(document.getElementById("map"), {
+        center: {lat: 0, lng: 0},
+        zoom: 8
+      });
+    }
   </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
 </html>
